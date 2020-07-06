@@ -22,6 +22,7 @@
   import OnDestroy from "./comps/lifecycles/OnDestroy.svelte";
   import BeforeUpdateAfterUpdate from "./comps/lifecycles/BeforeUpdateAfterUpdate.svelte";
   import Tick from "./comps/lifecycles/Tick.svelte";
+  import WritableStore from "./comps/stores/writable/App.svelte";
   let name = "world";
   const myObj = {
     name: "an object pased as props",
@@ -124,7 +125,11 @@
   <summary>BeforeUpdateAfterUpdate, lifecycle</summary>
   <BeforeUpdateAfterUpdate />
 </details>
-<details open>
+<details>
   <summary>Tick, lifecycle</summary>
   <Tick />
+</details>
+<details open>
+  <summary>Stores: writable</summary>
+  <WritableStore />
 </details>
