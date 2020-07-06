@@ -1,4 +1,5 @@
 <script>
+  import { onDestroy } from "svelte";
   import { count } from "./stores.js";
   import Incrementer from "./Inc.svelte";
   import Decrementer from "./Dec.svelte";
@@ -9,6 +10,7 @@
   const unsubscribe = count.subscribe(value => {
     count_value = value;
   });
+  onDestroy(unsubscribe);
 </script>
 
 <h1>The count is {count_value}</h1>
@@ -16,6 +18,7 @@
 <Incrementer />
 <Decrementer />
 <Resetter />
+<p>Stores are like a global state object</p>
 <p>
   Not all application state belongs inside your application's component
   hierarchy. Sometimes, you'll have values that need to be accessed by multiple

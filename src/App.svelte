@@ -23,6 +23,9 @@
   import BeforeUpdateAfterUpdate from "./comps/lifecycles/BeforeUpdateAfterUpdate.svelte";
   import Tick from "./comps/lifecycles/Tick.svelte";
   import WritableStore from "./comps/stores/writable/App.svelte";
+  import AutoSubscription from "./comps/stores/writable/AutoSubscription.svelte";
+  import ReadableStore from "./comps/stores/readable/Readable.svelte";
+  import DerivedStore from "./comps/stores/derived/App.svelte";
   let name = "world";
   const myObj = {
     name: "an object pased as props",
@@ -129,7 +132,16 @@
   <summary>Tick, lifecycle</summary>
   <Tick />
 </details>
-<details open>
+<details>
   <summary>Stores: writable</summary>
   <WritableStore />
+  <AutoSubscription />
+</details>
+<details>
+  <summary>Stores: readable</summary>
+  <ReadableStore />
+</details>
+<details open>
+  <summary>Stores: derived</summary>
+  <DerivedStore />
 </details>
