@@ -26,6 +26,7 @@
   import AutoSubscription from "./comps/stores/writable/AutoSubscription.svelte";
   import ReadableStore from "./comps/stores/readable/Readable.svelte";
   import DerivedStore from "./comps/stores/derived/App.svelte";
+  import CustomStore from "./comps/stores/custom/App.svelte";
   let name = "world";
   const myObj = {
     name: "an object pased as props",
@@ -141,7 +142,11 @@
   <summary>Stores: readable</summary>
   <ReadableStore />
 </details>
-<details open>
+<details>
   <summary>Stores: derived</summary>
   <DerivedStore />
+</details>
+<details open>
+  <summary>Stores: custom</summary>
+  <CustomStore />
 </details>
