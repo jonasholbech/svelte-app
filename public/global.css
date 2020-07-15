@@ -78,4 +78,8 @@ summary {
   cursor: pointer;
 }
 .manual {
+  margin: 0.8rem;
+  border: 1px dotted grey;
+  padding: 0.5rem;
+  background: lightblue;
 }
