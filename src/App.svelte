@@ -29,6 +29,7 @@
   import CustomStore from "./comps/stores/custom/App.svelte";
   import BindingStore from "./comps/stores/binding/App.svelte";
   import Tweened from "./comps/motion/tweened/App.svelte";
+  import Spring from "./comps/motion/spring/App.svelte";
   let name = "world";
   const myObj = {
     name: "an object pased as props",
@@ -158,7 +159,12 @@
   <BindingStore />
 </details>
 
-<details open>
+<details>
   <summary>Motion: Tweened</summary>
   <Tweened />
+</details>
+
+<details open>
+  <summary>Motion: Spring</summary>
+  <Spring />
 </details>
