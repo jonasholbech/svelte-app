@@ -27,6 +27,7 @@
   import ReadableStore from "./comps/stores/readable/Readable.svelte";
   import DerivedStore from "./comps/stores/derived/App.svelte";
   import CustomStore from "./comps/stores/custom/App.svelte";
+  import BindingStore from "./comps/stores/binding/App.svelte";
   let name = "world";
   const myObj = {
     name: "an object pased as props",
@@ -146,7 +147,12 @@
   <summary>Stores: derived</summary>
   <DerivedStore />
 </details>
-<details open>
+<details>
   <summary>Stores: custom</summary>
   <CustomStore />
+</details>
+
+<details open>
+  <summary>Stores: binding</summary>
+  <BindingStore />
 </details>
