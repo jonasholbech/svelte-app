@@ -37,6 +37,7 @@
   import LocalTransitions from "./comps/transitions/LocalTransitions.svelte";
   import Deferred from "./comps/transitions/Deferred.svelte";
   import AnimateDirective from "./comps/transitions/AnimateDirective.svelte";
+  import LazyLoader from "./comps/reusables/IntersectionObserver/App.svelte";
   let name = "world";
   const myObj = {
     name: "an object pased as props",
@@ -213,4 +214,9 @@
 <details>
   <summary>Transitions: Animate Directive</summary>
   <AnimateDirective />
+</details>
+
+<details>
+  <summary>Lazy Loading</summary>
+  <LazyLoader />
 </details>
