@@ -30,11 +30,22 @@
   import BindingStore from "./comps/stores/binding/App.svelte";
   import Tweened from "./comps/motion/tweened/App.svelte";
   import Spring from "./comps/motion/spring/App.svelte";
+  import Transitions from "./comps/transitions/App.svelte";
+  import CustomCSS from "./comps/transitions/CustomCSS.svelte";
+  import CustomJS from "./comps/transitions/CustomJS.svelte";
+  import TransitionEvents from "./comps/transitions/TransitionEvents.svelte";
+  import LocalTransitions from "./comps/transitions/LocalTransitions.svelte";
+  import Deferred from "./comps/transitions/Deferred.svelte";
+  import AnimateDirective from "./comps/transitions/AnimateDirective.svelte";
   let name = "world";
   const myObj = {
     name: "an object pased as props",
     status: "great"
   };
+  window.addEventListener("load", () => {
+    const last = document.querySelector("details:last-child");
+    last.open = true;
+  });
 </script>
 
 <details>
@@ -164,7 +175,42 @@
   <Tweened />
 </details>
 
-<details open>
+<details>
   <summary>Motion: Spring</summary>
   <Spring />
+</details>
+
+<details>
+  <summary>Transitions</summary>
+  <Transitions />
+</details>
+
+<details>
+  <summary>Transitions: Custom CSS</summary>
+  <CustomCSS />
+</details>
+
+<details>
+  <summary>Transitions: Custom JS</summary>
+  <CustomJS />
+</details>
+
+<details>
+  <summary>Transitions: Events</summary>
+  <TransitionEvents />
+</details>
+
+<details>
+  <summary>Transitions: Local</summary>
+  <LocalTransitions />
+</details>
+
+<details>
+  <summary>Transitions: Deferred</summary>
+  <Deferred />
+</details>
+
+<details>
+  <summary>Transitions: Animate Directive</summary>
+  <AnimateDirective />
 </details>

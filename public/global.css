@@ -72,7 +72,7 @@ button:focus {
 
 #app1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr;*/
 }
 summary {
   cursor: pointer;
